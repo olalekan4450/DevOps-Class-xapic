@@ -44,8 +44,8 @@ jobs:
       - id: docker_build
         uses: docker/build-push-action@v4
         with:
-          context: ./todo-app-backend
-          file: Dockerfile
+          context: .
+          file: ./todo-app-backend/Dockerfile
           push: true
           tags: ${{ secrets.Lekan }}/todo-app-backend:${{ github.sha }}    
 
