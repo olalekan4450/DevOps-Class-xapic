@@ -14,7 +14,7 @@ COPY requirement.txt .
 # This is the installation of the dependencies
 RUN pip install --no-cache-dir --trusted-host pypi.python.org --use-pep517 -r requirement.txt
 
-## Copying the rest of the application code
+### Copying the rest of the application code
 COPY . .
 
 RUN chmod +x entrypoint.sh

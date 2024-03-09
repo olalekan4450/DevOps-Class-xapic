@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - master
+      - DevOps-Class
     paths:
       - todo-app-backend/
       - todo-app-frontend/

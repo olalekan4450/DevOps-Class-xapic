@@ -17,5 +17,5 @@ COPY src/ ./src
 # Exposing the port the app runs on (assuming your frontend app runs on port 3000)
 EXPOSE 3000
 
-## Command to run the application
+### Command to run the application
 CMD ["npm", "start"]
