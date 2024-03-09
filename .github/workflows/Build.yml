@@ -29,7 +29,7 @@ jobs:
       - uses: docker/login-action@v2
       
         with:
-          username: ${{ secrets.Lekan }}
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
           
       - name: Set up Docker Buildx
@@ -47,6 +47,6 @@ jobs:
           context: ./todo-app-backend
           file: ./todo-app-backend/Dockerfile
           push: true
-          tags: ${{ secrets.Lekan }}/todoapp_b:${{ github.sha }}    
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/todoapp_b:${{ github.sha }}    
 
 ###
