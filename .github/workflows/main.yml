@@ -1,9 +1,8 @@
-name: Build
+name: main
 on:
   push:
     branches:
       - master
-      - devops-class
     paths:
       - todo-app-backend/
       - todo-app-frontend/
