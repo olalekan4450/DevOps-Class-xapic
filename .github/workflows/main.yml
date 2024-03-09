@@ -44,7 +44,8 @@ jobs:
       - id: docker_build
         uses: docker/build-push-action@v4
         with:
-          context: ./DevOps-Class/todo-app-backend
+          context: ./DevOps-Class-xapic/todo-app-backend
+          file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/todo-app-backend:${{ github.sha }}    
 
