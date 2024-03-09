@@ -47,6 +47,6 @@ jobs:
           context: ./todo-app-backend
           file: ./todo-app-backend/Dockerfile
           push: true
-          tags: ${{ secrets.Lekan }}/todo-app-backend:${{ github.sha }}    
+          tags: ${{ secrets.Lekan }}/todoapp_b:${{ github.sha }}    
 
 ###
