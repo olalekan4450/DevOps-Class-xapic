@@ -47,6 +47,6 @@ jobs:
           context: ./DevOps-Class-xapic/todo-app-backend
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/todo-app-backend:${{ github.sha }}    
+          tags: ${{ secrets.Lekan }}/todo-app-backend:${{ github.sha }}    
 
 ##
